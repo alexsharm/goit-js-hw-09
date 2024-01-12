@@ -2,14 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 3</title>
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/goit-js-hw-09/assets/modulepreload-polyfill-ec808ebb.js"></script>
   </head>
   <body>
-    <section>
-      <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 3</h1>
-    </section>
+    <a href="./index.html">Go to home</a>
+    <form class="feedback-form" autocomplete="off">
+      <label class="text-label" for="email">Email</label>
+      <input
+        class="email-input"
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Type area"
+        autofocus
+      />
+
+      <label class="text-label" for="message">Message</label>
+      <textarea
+        class="text-input"
+        id="message"
+        name="message"
+        rows="8"
+      ></textarea>
+      <button class="form-button" type="submit">Submit</button>
+    </form>
+
+    
   </body>
 </html>
