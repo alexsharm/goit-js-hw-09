@@ -43,11 +43,11 @@
 }
 
 .email-input:hover {
-  border-color: #000000;
+  border-color: #000000 !important;
 }
 
-.email-input:active {
-  border: 1px solid #808080;
+.text-input:hover {
+  border-color: #000000 !important;
 }
 
 .form-button {
