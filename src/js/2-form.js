@@ -20,8 +20,11 @@ function handleSubmit(evt) {
     evt.target.elements.email.value.trim() != '' &&
     evt.target.elements.message.value.trim() != ''
   ) {
-    console.log(evt.target.elements.email.value);
-    console.log(evt.target.elements.message.value);
+    const dataObject = {
+      email: evt.target.elements.email.value.trim(),
+      message: evt.target.elements.message.value.trim(),
+    };
+    console.log(dataObject);
     localStorage.removeItem(localStorageKey);
     form.reset();
   } else {

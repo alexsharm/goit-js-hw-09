@@ -78,7 +78,6 @@ const markup = images
       class="gallery-image"
       src="${image.preview}"
       alt="${image.description}"
-      title="${image.description}"
     />
   </a>
 </li>`
@@ -87,6 +86,7 @@ const markup = images
 
 gallery.insertAdjacentHTML('afterbegin', markup);
 
-var lightbox = new SimpleLightbox('.gallery a', {
-  /* options */
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
 });
